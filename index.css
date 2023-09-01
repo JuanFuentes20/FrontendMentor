@@ -4,8 +4,15 @@
     box-sizing: border-box;
   }
 
+  :root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+  }
+
 html {
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--clr-light-gray);
 }
 
 body {
@@ -15,7 +22,7 @@ body {
 }
 
 .card-container {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--clr-white);
     width: 300px;
     border-radius: 15px;
     position: absolute;
@@ -29,6 +36,7 @@ body {
     max-width: 100%;
     display: block;
     border-radius: 10px;
+    box-shadow: 0px 3px 10px var(--clr-light-gray);
 }
 
 .text-content {
@@ -38,6 +46,7 @@ body {
 
 p {
     font-weight: 100;
+    color: var(--clr-grayish-blue);
 }
 
 h2 {
